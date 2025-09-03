@@ -1,0 +1,10 @@
+@use '/src/sass/base/variables.scss' as *;
+
+@mixin btn{
+    border: 2px solid #f3a917;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+

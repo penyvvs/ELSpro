@@ -1,0 +1,29 @@
+@use '/src/sass/base/mixins.scss' as *;
+@use '/src/sass/base/variables.scss' as *;
+
+.btn-black{
+    @include btn;
+    min-width: 245px;
+    min-height: 50px;
+    background: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    color: $white;
+    &:hover{
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.btn-orange{
+    @include btn;
+    min-width: 245px;
+    min-height: 50px;
+    background: #f3a917;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    &:hover{
+        box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+    }
+}
