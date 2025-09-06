@@ -1,0 +1,302 @@
+.schedule{
+    padding: 140px 0;
+    &-title{
+        line-height: 141%;
+    }
+    &__tabs{
+        margin-top: 40px;
+        display: flex;
+    }
+    &__tab{
+        width: 150px;
+        &_active{
+            background: #F3A917;
+        }
+    }
+    &__content-item{
+        position: relative;
+        margin-top: 95px;
+        overflow: hidden;
+        padding: 10px 10px 130px 10px;
+        .swiper-pagination{
+            bottom: 35px;
+            z-index: 1;
+            &-bullet{
+                margin: 0 9px !important;
+                width: 15px;
+                height: 15px;
+                background: #fff;
+                &-active{
+                    background: #F3A917;
+                }
+            }
+        }
+        .swiper-custom-nav{
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 90px);
+            transform: translateX(-100%);
+            display: flex;
+            padding-left: 15px;
+            width: 85px;
+            height: 85px;
+            border: 2px solid #F3A917;
+            border-radius: 100%;
+            align-items: center;
+            font-size: 16px;
+            transition: all 0.5s;
+            cursor: pointer;
+            z-index: 2;
+            &-right{
+                left: unset;
+                right: calc(50% - 90px);
+                transform: translateX(100%);
+            }
+            &:hover{
+                background: rgba(255, 255, 255, 0.2);
+            }
+        }
+    }
+    
+    &__battles{
+        position: relative;
+        padding: 45px 35px;
+        border-radius: 10px;
+        width: 350px;
+        height: 341px;
+        background: rgba(59, 61, 66, 0.68);
+        &_live{
+            display: none;
+        }
+        &:hover{
+            .schedule__battles_live-active{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background: rgba(7, 7, 7, 0.76);
+                z-index: 2;
+                box-shadow: 0 0 10px 1px rgba(255, 200, 0, 0.8);
+            }
+        }
+        &-title{
+            position: relative;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.01em;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -20px;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #F3A917;
+            }
+        }
+        &-logo::before{
+            margin: 0;
+            margin-top: 50px;
+            font-size: 50px;
+            color: #F3A917;
+        }
+        &_wrapper{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-group{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 175%;
+        }
+        &-match{
+            border: 1px solid #f3a917;
+            padding: 5px 10px;
+            min-width: 100px;
+            height: 30px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+        }
+        &-map{
+            position: absolute;
+            bottom: 45px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 167%;
+            letter-spacing: 0.01em;
+            color: #c4c4c5;
+        }
+        &-whatch{
+            padding: 10px 20px;
+            display: flex;
+            gap: 10px;
+            min-width: 166px;
+            height: 40px;
+            border: none;
+            background: #f3a917;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover{
+                box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+        &-live{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 143%;
+            letter-spacing: 0.01em;
+        }
+    }
+    &__match{
+        position: relative;
+        padding: 30px 35px;
+        border-radius: 10px;
+        width: 350px;
+        height: 341px;
+        background: rgba(59, 61, 66, 0.68);
+        &_live{
+            display: none;
+        }
+        &:hover{
+            .schedule__match_live{
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                background: rgba(7, 7, 7, 0.76);
+                z-index: 2;
+                box-shadow: 0 0 10px 1px rgba(255, 200, 0, 0.8);
+            }
+        }
+        &-whatch{
+            padding: 10px 20px;
+            display: flex;
+            gap: 10px;
+            min-width: 166px;
+            height: 40px;
+            border: none;
+            background: #f3a917;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover{
+                box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+            }
+            span{
+                font-size: 14px;
+            }
+        }
+
+        &_name{
+            position: relative;
+            padding-bottom: 16px;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            &-title{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 143%;
+                letter-spacing: 0.01em;
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 70px;
+            }
+            &-date{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 167%;
+                letter-spacing: 0.01em;
+            }
+            &-time{
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: 0.01em;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 1px;
+                background: #f3a917;
+            }
+        }
+
+        &_content{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 185px;
+        }
+        &_logo{
+            display: flex;
+            gap: 20px;
+            img{
+                display: block;
+                width: 50px;
+                height: 50px;
+                flex-shrink: 0;
+                flex-grow: 0;  
+            }
+        }
+
+        &_comand{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-name{
+                font-weight: 700;
+                font-size: 20px;
+            }
+            &-coff{
+                padding: 5px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 58px;
+                height: 30px;
+                border: 1px solid #f3a917;
+            }
+        }
+
+        &_start{
+            display: flex;
+            justify-content: space-between;
+            &-time{
+                font-weight: 400;
+                font-size: 12px;
+            }
+            &-ggbet{
+                display: block;
+                width: 58px;
+                height: 15px;
+            }
+        }
+    }
+}

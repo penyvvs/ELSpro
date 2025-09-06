@@ -36,6 +36,10 @@ html {
 	font-family: "Montserrat", sans-serif;
 	scroll-behavior: smooth;
 	color: $white;
+	&::selection {
+		background-color: #fff;
+		color: #000;
+	}
 }
 
 ul{

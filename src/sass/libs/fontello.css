@@ -56,6 +56,10 @@
 
 
 .icon-P:before { content: '\e805'; } /* '' */
+.icon-playsvg:before { content: '\e80a'; } /* '' */
+
+.icon-arrow-right:before { content: '\e808'; } /* '' */
+.icon-arrow-left:before { content: '\e809'; } /* '' */
 
 .icon-trophy-outline:before { content: '\e800'; } /* '' */
 .icon-tools-and-utensils:before { content: '\e801'; } /* '' */

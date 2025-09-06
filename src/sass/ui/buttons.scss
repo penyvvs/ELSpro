@@ -3,7 +3,7 @@
 
 .btn-black{
     @include btn;
-    min-width: 245px;
+    width: 245px;
     min-height: 50px;
     background: #000000;
     font-weight: 600;
@@ -17,7 +17,7 @@
 
 .btn-orange{
     @include btn;
-    min-width: 245px;
+    width: 245px;
     min-height: 50px;
     background: #f3a917;
     font-weight: 600;
@@ -27,3 +27,4 @@
         box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
     }
 }
+
