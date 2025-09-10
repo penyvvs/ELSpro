@@ -1,0 +1,47 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.team{
+    padding: 510px 0 90px 0;
+    background: url('/src/img/footerSniper.png') top center / cover no-repeat ;
+    &__table{
+        margin-left: auto;  /* выдавит таблицу вправо */
+        margin-right: 0;
+        width: 650px;
+        border-collapse: collapse;
+        thead{
+            background: #f3a917;
+        }
+        tbody{
+            background: #292a2f;
+        }
+        &-team{
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #f3a917;
+        }
+        &-number{
+            padding: 10px;
+            vertical-align: middle;
+            text-align: center;
+            width: 70px;
+            height: 55px;
+            border: 1px solid #f3a917;
+        }
+        &-content{
+            padding: 10px 10px 10px 20px;
+            width: 580px;
+            height: 55px;
+            border: 1px solid #f3a917;
+            img{
+                display: block;
+                width: 24px;
+                height: 18px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+            }
+        }
+    }
+}

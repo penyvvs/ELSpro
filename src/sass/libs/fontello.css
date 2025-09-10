@@ -54,7 +54,6 @@
 .icon-facebook:before { content: '\f09a'; } /* '' */
 .icon-vkontakte:before { content: '\f189'; } /* '' */
 
-
 .icon-P:before { content: '\e805'; } /* '' */
 .icon-playsvg:before { content: '\e80a'; } /* '' */
 
@@ -64,3 +63,5 @@
 .icon-trophy-outline:before { content: '\e800'; } /* '' */
 .icon-tools-and-utensils:before { content: '\e801'; } /* '' */
 .icon-time-and-date:before { content: '\e802'; } /* '' */
+
+.icon-success:before { content: '\e80b'; } /* '' */
